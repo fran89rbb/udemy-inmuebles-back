@@ -6,7 +6,7 @@ import java.util.Set;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.springboot.microservicio.gatewaymodels.entity.User;
+import com.springboot.microservicio.gateway.models.entity.User;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -20,6 +20,7 @@ import com.springboot.microservicio.gateway.utils.SecurityUtils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 
 @Component
@@ -44,7 +45,7 @@ public class JwtProviderImpl implements IJwtProvider {
 				.claim("role", authorities)
 				.claim("userId", auth.getId())
 				.setExpiration(new Date(System.currentTimeMillis() + JWT_EXPIRATION_IN_MS))
-				.signWith(key, io.jsonwebtoken.SignatureAlgorithm.ES512)
+				.signWith(key, SignatureAlgorithm.HS512)
 				.compact();
 	}
 	

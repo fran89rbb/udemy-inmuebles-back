@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.springboot.microservicio.gateway.models.entity.Role;
+import com.springboot.microservicio.gateway.models.entity.User;
 import com.springboot.microservicio.gateway.repository.IUserRepository;
-import com.springboot.microservicio.gatewaymodels.entity.Role;
-import com.springboot.microservicio.gatewaymodels.entity.User;
 
 @Service
 public class UserServiceImpl implements IUserService{

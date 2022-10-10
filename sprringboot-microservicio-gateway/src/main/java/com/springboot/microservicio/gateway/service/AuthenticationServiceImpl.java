@@ -4,11 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Service;
 
+import com.springboot.microservicio.gateway.models.entity.User;
 import com.springboot.microservicio.gateway.security.IJwtProvider;
 import com.springboot.microservicio.gateway.security.UserPrincipal;
-import com.springboot.microservicio.gatewaymodels.entity.User;
 
+@Service
 public class AuthenticationServiceImpl implements IAuthenticationService {
 	
 	@Autowired

@@ -1,6 +1,6 @@
 package com.springboot.microservicio.gateway.service;
 
-import com.springboot.microservicio.gatewaymodels.entity.User;
+import com.springboot.microservicio.gateway.models.entity.User;
 
 public interface IAuthenticationService {
 

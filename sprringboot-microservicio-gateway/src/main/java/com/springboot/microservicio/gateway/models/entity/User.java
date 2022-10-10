@@ -1,4 +1,4 @@
-package com.springboot.microservicio.gatewaymodels.entity;
+package com.springboot.microservicio.gateway.models.entity;
 
 import java.time.LocalDateTime;
 
